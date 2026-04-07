@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #74ebd5, #9face6);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    width: 320px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+/* Input */
+#input {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    font-size: 14px;
+    outline: none;
+    transition: 0.2s;
+}
+
+#input:focus {
+    border-color: #6c8cff;
+}
+
+/* Lista */
+#task-list {
+    list-style: none;
+}
+
+/* Elem */
+li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px;
+    margin-bottom: 8px;
+    border-radius: 8px;
+    background: #f7f7f7;
+    transition: 0.2s;
+}
+
+li:hover {
+    background: #eef1ff;
+}
+
+/* Szöveg */
+span {
+    flex: 1;
+    margin-left: 10px;
+    font-size: 14px;
+}
+
+/* Checkbox */
+input[type="checkbox"] {
+    cursor: pointer;
+}
+
+/* Kész állapot */
+input[type="checkbox"]:checked + span {
+    text-decoration: line-through;
+    color: gray;
+}
+
+/* Törlés gomb */
+button {
+    background: #ff5c5c;
+    border: none;
+    color: white;
+    padding: 5px 8px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+button:hover {
+    background: #e04848;
+}
