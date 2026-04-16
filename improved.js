@@ -1,4 +1,4 @@
-const input = document.querySelector('#fasz')
+const input = document.querySelector('#todos')
 const suli = document.querySelector("#suli")
 
 input.addEventListener("keydown", (e) => {
