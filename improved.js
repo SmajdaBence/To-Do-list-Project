@@ -1,4 +1,4 @@
-const input = document.querySelector('#todos')
+const input = document.querySelector('#fasz')
 const suli = document.querySelector("#suli")
 
 input.addEventListener("keydown", (e) => {
@@ -16,3 +16,12 @@ input.addEventListener("keydown", (e) => {
     input.value = ""; // input törlése
   }
 });
+function toggleMenu() {
+    const menu = document.getElementById("sideMenu");
+
+    if (menu.style.left === "0px") {
+        menu.style.left = "-250px";
+    } else {
+        menu.style.left = "0px";
+    }
+}
